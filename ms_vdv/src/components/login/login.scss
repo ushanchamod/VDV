@@ -1,0 +1,89 @@
+.login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEFF0;
+
+    .login-card{
+        width: 100%;
+        max-width: 350px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #fff;
+        padding: 0 30px;
+        margin-top: 40px;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        .image{
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+
+            img{
+                width: 120px;
+            }
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .username, .password{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: rgb(41, 41, 41);
+                }
+                
+                input{
+                    margin-top: 3px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    outline: none;
+                    margin-bottom: 1px;
+                    width: 100%;
+                }
+
+                .error{
+                    color: #ff564e;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .login-button{
+                width: 100%;
+                background-color: #ff564e;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                border-radius: 3px;
+                margin: 8px 0 30px 0;
+                transition: all 0.1s ease-in-out;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #ff1206;
+                    opacity: 0.8;
+                }
+
+                &:active{
+                    background-color: #000000;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

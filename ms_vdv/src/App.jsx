@@ -1,8 +1,11 @@
-
+import Routing from "./Routing"
+import { MyAuthProvider } from "./providers/AuthProvider"
 
 const App = () => {
   return (
-    <div>App</div>
+    <MyAuthProvider>
+        <Routing />
+    </MyAuthProvider>
   )
 }
 
